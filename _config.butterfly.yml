@@ -18,10 +18,16 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  # About: /about/ || fas fa-heart
+
 
 # --------------------------------------
 # Code Blocks Settings
@@ -29,7 +35,7 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
+  theme: ocean
   macStyle: false
   # Code block height limit (unit: px)
   height_limit: false
@@ -57,7 +63,7 @@ favicon: /img/favicon.png
 
 avatar:
   img: /img/butterfly-icon.png
-  effect: true
+  effect: false
 
 # Disable all banner images
 disable_top_img: false
@@ -110,7 +116,7 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: /img/error-page.png
 
@@ -122,7 +128,7 @@ post_meta:
     # Choose: date / relative
     date_format: date
     categories: true
-    tags: false
+    tags: true
     label: true
   post:
     # Choose: left / center
@@ -148,7 +154,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -163,7 +169,7 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: 你可以去倾听&#44;但不可以被淹没
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -173,7 +179,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 2
 
 # Display the article introduction on homepage
 # 1: description
@@ -472,7 +478,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
+  use: local_search
   placeholder:
 
   # Algolia Search
@@ -490,7 +496,7 @@ search:
     unescape: false
     # Enable pagination for search results
     pagination:
-      enable: false
+      enable: true
       # Number of search results per page
       hitsPerPage: 8
     CDN:
@@ -515,7 +521,7 @@ share:
   # Share.js
   # https://github.com/overtrue/share.js
   sharejs:
-    sites: facebook,x,wechat,weibo,qq
+    sites: wechat,weibo,qq
 
   # AddToAny
   # https://www.addtoany.com/
@@ -821,7 +827,7 @@ font:
   global_font_size:
   code_font_size:
   font_family:
-  code_font_family:
+  code_font_family: consolas
 
 # Font settings for the site title and site subtitle
 blog_title_font:
@@ -907,7 +913,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: medium_zoom
 
 # --------------------------------------
 # Tag Plugins settings
