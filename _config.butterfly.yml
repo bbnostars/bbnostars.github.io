@@ -169,7 +169,8 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub: 你可以去倾听&#44;但不可以被淹没
+  sub: 
+    - 你可以去倾听&#44;但不可以被淹没
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
