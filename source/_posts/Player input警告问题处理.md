@@ -10,7 +10,7 @@ keywords: Input system
 
 更新unity hub后，提示我使用的旧版编辑器6000.1.4f1版本存在漏洞已不推荐使用，遂升级为最新支持版，然后发现player input组件出现以下警告（也可能是我之前一直没注意到？）
 
-![image-20251103174316611](img/2025-11-03 174314Playerinput.png)
+![image-20251103174316611]("img/2025-11-03 174314Playerinput.png")
 
 大意是player input组件不推荐使用项目范围的actions资源，因为这是一个单例引用并且所有的actions maps都是默认开启的。你应该在Start()里禁用所有的actions maps后单独启用你设置的default action map。
 
@@ -30,7 +30,7 @@ keywords: Input system
 
 当前的action maps：
 
-![image-20251103204518660](img/2025-11-03 204515Playerinput.png)
+![image-20251103204518660]("img/2025-11-03 204515Playerinput.png")
 
 
 使用一段代码来解释：
@@ -54,7 +54,7 @@ if (Player.Instance.GetComponent<PlayerInput>().currentActionMap != null)
 
 运行结果：
 
-![image-20251103203816524](img/2025-11-03 203808Playerinput.png)
+![image-20251103203816524]("img/2025-11-03 203808Playerinput.png")
 
 可以发现Player身上挂载的Player input组件引用的actions和全局actions asset引用的是同一个对象。并且，不论是放在start中还是update中，player和ui的action maps始终都是激活的。
 
