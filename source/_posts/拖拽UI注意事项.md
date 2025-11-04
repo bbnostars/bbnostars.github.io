@@ -1,3 +1,12 @@
+---
+title: 制作拖拽ui图片效果时的注意事项
+date: 2025-10-20 15:20:05
+tags: 
+  - unity
+  - ui
+categories: 游戏开发学习
+keywords: ui 
+---
 # 拖拽UI
 
 需要注意canvas处于什么模式下，一般是Scale with screen size
